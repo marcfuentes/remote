@@ -14,8 +14,11 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+<<<<<<< HEAD
 //= require bootstrap-button
 //= require bootstrap-wysihtml5
 //= require_self
 
 
+=======
+>>>>>>> 9d3ce0ee5bb1cd03ea13c542b1896402deb899e4

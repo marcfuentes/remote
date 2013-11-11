@@ -6,10 +6,14 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
+<<<<<<< HEAD
   gem 'bootswatch-rails'
   gem 'font-awesome-sass-rails'
 end
 
+=======
+end
+>>>>>>> 9d3ce0ee5bb1cd03ea13c542b1896402deb899e4
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 2.3.2.2'
 gem 'cancan'
@@ -17,27 +21,40 @@ gem 'devise'
 gem 'figaro'
 gem 'rolify'
 gem 'simple_form'
+<<<<<<< HEAD
 gem 'bootstrap-sass-extras'
 gem 'bootstrap-wysihtml5-rails'
 
+=======
+>>>>>>> 9d3ce0ee5bb1cd03ea13c542b1896402deb899e4
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
   gem 'hub', :require=>nil
   gem 'quiet_assets'
   gem 'rails_layout'
+<<<<<<< HEAD
   gem 'carrierwave'
 end
 
+=======
+end
+>>>>>>> 9d3ce0ee5bb1cd03ea13c542b1896402deb899e4
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
 end
+<<<<<<< HEAD
 
 group :production do
   gem 'thin'
 end
 
+=======
+group :production do
+  gem 'thin'
+end
+>>>>>>> 9d3ce0ee5bb1cd03ea13c542b1896402deb899e4
 group :test do
   gem 'capybara'
   gem 'cucumber-rails', :require=>false
