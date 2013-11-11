@@ -1,0 +1,36 @@
+<%= simple_form_for @job, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :title %>
+  <%= f.input :headquaters %>
+
+  <div class="control-group">
+    <%= f.collection_select( :category_id, Category.all, :id,  :name, prompt: "Selecciona una categoria" ) %>
+   </div>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    $('.wysihtml5').each(function(i, elem) {
+      $(elem).wysihtml5();
+    });
+
+  })
+</script>
+        
+
+
+  <%= f.text_area :description, class: "wysihtml5" %> 
+
+
+  <%= f.input :apply %>
+  <%= f.input :company %>
+  <%= f.file_field :logo %>
+  <%= f.input :url %>
+  <%= f.input :email %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                jobs_path, :class => 'btn' %>
+  </div>
+<% end %>
+
